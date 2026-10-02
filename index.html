@@ -8,7 +8,7 @@
 <link rel="icon" href="img/mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,12 +21,15 @@
     <span>My3Dprints.ch</span>
   </a>
   <nav aria-label="Hauptnavigation">
-    <a href="#start">Startseite</a>
-    <a href="#service">3D-Druckservice</a>
     <a href="#angebot">Angebot</a>
+    <a href="#preise">Preise</a>
+    <a href="#service">3D-Druckservice</a>
     <a href="#ueber-uns">Über uns</a>
   </nav>
-  <a class="top-call" href="tel:+41794357902">079 435 79 02</a>
+  <div class="top-actions">
+    <a class="top-tel" href="tel:+41794357902">079 435 79 02</a>
+    <a class="top-cta" href="#kontakt">Kontaktiere uns</a>
+  </div>
 </header>
 
 <main id="inhalt">
@@ -35,10 +38,14 @@
 <section class="hero" id="start">
   <img class="hero-img" src="img/hero.jpg" alt="Ein roter Ring entsteht auf dem Druckbett eines 3D-Druckers">
   <div class="wrap hero-copy">
-    <h1>3D-Druck<br>für dich.</h1>
+    <h1>3D-Druck<br><span class="accent">für dich.</span></h1>
     <p>Individuelle Designerobjekte und professioneller 3D-Druck sowie Projektentwicklung. Für jeden Auftrag sind wir dein Partner.</p>
-    <a class="btn" href="#kontakt">Kontaktiere uns</a>
+    <div class="actions">
+      <a class="btn" href="#kontakt">Kontaktiere uns</a>
+      <a class="btn ghost-light" href="tel:+41794357902">079 435 79 02</a>
+    </div>
   </div>
+  <div class="layers" aria-hidden="true"></div>
 </section>
 
 <!-- Vorteile -->
@@ -55,83 +62,16 @@
   </div>
 </section>
 
-<!-- Ersatzteil -->
-<section class="section tint" id="ersatzteil">
-  <div class="wrap">
-    <h2>Ersatzteil / Neuentwicklung</h2>
-    <div class="duo">
-    <figure class="photo"><img src="img/cad.jpg" alt="Konstruktion eines Teils am CAD-Bildschirm" loading="lazy"></figure>
-    <div class="prose">
-      <p>Du hast ein kaputtes Teil, welches Du nirgends findest. Wir können es mit Prototypen-Drucker und CAD-Modell wieder hinbekommen, dabei wird Dein Teil zuerst grob im CAD entworfen und dann ein grober Prototyp gedruckt. Dieser wird dann verbessert, bis Dein Teil seine Funktion völlig erfüllt.</p>
-      <p>Auch ein völlig neues Teil können wir aus Deinen Ideen erstellen, umsetzen und verbessern. Dabei werden gemeinsam die Parameter besprochen und dann die Prototypen &amp; fertigen Teile 3D-gedruckt.</p>
-      <p>Schreibe uns dafür einfach eine E-Mail oder WhatsApp-Nachricht. Die Preise werden nach Aufwand (CAD Gebühren) und dem Filamentgewicht berechnet.</p>
-    </div>
-    </div>
-  </div>
-</section>
-
 <!-- Warum 3D-Druck -->
-<section class="section" id="warum">
-  <div class="wrap">
-    <h2>Warum 3D-Druck?</h2>
-    <div class="duo">
+<section class="section tint" id="warum">
+  <div class="wrap duo">
     <div class="prose">
+      <h2>Warum 3D-Druck?</h2>
       <p>Mit den verschiedenen Druck- und Nachbearbeitungsverfahren, lassen sich alle erdenklichen Kunststoffteile in jeglichen Formen und Grössen erstellen, die vielfältig eingesetzt werden können.</p>
       <h3>Wie wird gedruckt? Welche Farben und Materialien sind möglich?</h3>
       <p>Informationen dazu findest Du im <a href="#angebot">Angebot</a>.</p>
     </div>
-    <figure class="photo"><img src="img/astro.jpg" alt="Gelbe Astronauten-Figur aus dem 3D-Drucker" loading="lazy"></figure>
-    </div>
-  </div>
-</section>
-
-<!-- Service -->
-<section class="section dark layers" id="service">
-  <div class="wrap">
-    <h2>Wir drucken, was Du brauchst.</h2>
-    <div class="cols">
-      <div class="prose">
-        <p>Du brauchst ein Modell. Lade eines aus dem Internet herunter, zum Beispiel von Thingiverse, oder lass eines von uns konstruieren.</p>
-        <p>Wie soll dein Modell gedruckt werden? Welche Farbe oder welches Material soll verwendet werden? Wo wird das Teil belastet und wie soll die Oberfläche sein? Bei gewünschter Beratung einfach fragen!</p>
-        <p>Schreibe uns alle Details. Dann melden wir uns bei Dir und der Druck beginnt. Erhalte deine Modelle nach deinen Wünschen.</p>
-        <p class="contact-line"><a href="mailto:info@my3dprints.ch?subject=Anfrage%203D-Druck">info@my3Dprints.ch</a> <span aria-hidden="true">/</span> <a href="tel:+41794357902">079 435 79 02</a></p>
-      </div>
-      <div class="prose">
-        <h3>Wie komme ich zu 3D-Modellen?</h3>
-        <p>Wenn Du einen Auftrag für uns hast, brauchst du ein Modell. Es gibt Webseiten mit Millionen von Modellen, vielleicht findest du dort genau, was du brauchst. Die bekanntesten Webseiten:</p>
-        <ul class="sources">
-          <li><a href="https://www.thingiverse.com/" target="_blank" rel="noopener">Thingiverse.com</a></li>
-          <li><a href="https://makerworld.com/" target="_blank" rel="noopener">MakerWorld.com</a></li>
-          <li><a href="https://www.printables.com/" target="_blank" rel="noopener">Printables.com</a></li>
-          <li><a href="https://cults3d.com/" target="_blank" rel="noopener">Cults3d.com</a></li>
-        </ul>
-        <p>Du hast kein Teil exakt nach deinen Wünschen gefunden? Mit Deinen Informationen können wir ein Teil exakt nach deinen Wünschen im CAD erstellen. Schreibe uns eine WhatsApp oder E-Mail mit deinen Wünschen.</p>
-      </div>
-    </div>
-
-    <h2 class="prices-title">Preise</h2>
-    <dl class="prices">
-      <div>
-        <dt>FDM 3D-Druck <small>Eine vielfältige Druckart mit Materialien für alle Anwendungen.</small></dt>
-        <dd><span>ab</span> 0.19 <small>Fr./g</small></dd>
-      </div>
-      <div>
-        <dt>SLA 3D-Druck <small>Für schöne Teile ohne sichtbare Schichten. Hart und hitzebeständig.</small></dt>
-        <dd><span>ab</span> 0.29 <small>Fr./g</small></dd>
-      </div>
-      <div>
-        <dt>Nachbearbeitung SLA <small>Das Teil aus Harz muss in Isopropanol gewaschen und dann im UV-Licht gehärtet werden. Dann ist es fixfertig einsetzbar.</small></dt>
-        <dd>5.00 <small>Fr.</small></dd>
-      </div>
-      <div>
-        <dt>Grundgebühr 3D-Druck <small>Für das Vorbereiten deines Drucks fällt eine Pauschalgebühr pro Druck an. Sie gilt pro Druckplatte, die gedruckt wird. Für jede weitere 5.00 Fr.</small></dt>
-        <dd>8.00 <small>Fr.</small></dd>
-      </div>
-      <div>
-        <dt>Modellieren am CAD <small>Dein persönliches Teil nach Deinen Wünschen hergestellt.</small></dt>
-        <dd>69.00 <small>Fr. / h</small></dd>
-      </div>
-    </dl>
+    <figure class="photo"><img src="img/astro.jpg" alt="Gelbe Astronauten-Figur aus dem 3D-Drucker" width="732" height="562" loading="lazy"></figure>
   </div>
 </section>
 
@@ -139,9 +79,15 @@
 <section class="section" id="angebot">
   <div class="wrap">
     <h2>Angebot</h2>
+    <ul class="chips">
+      <li><a href="#fdm">FDM Druck</a></li>
+      <li><a href="#sla">SLA Druck</a></li>
+      <li><a href="#cad">Modellieren am CAD</a></li>
+      <li><a href="#nachbearbeitung">Nachbearbeitung SLA</a></li>
+    </ul>
 
-    <article class="method">
-      <figure class="photo"><img src="img/colors.jpg" alt="Farbige Filamente in einer Box neben einem FDM-Drucker" loading="lazy"></figure>
+    <article class="method" id="fdm">
+      <figure class="photo"><img src="img/colors.jpg" alt="Farbige Filamente in einer Box neben einem FDM-Drucker" width="1800" height="1200" loading="lazy"></figure>
       <div class="prose">
         <h3>FDM Druck</h3>
         <p>FDM steht für Fused Deposition Modeling, das bedeutet, dass der Drucker aus einem beliebigen Kunststoff (verschiedene Eigenschaften) einen Faden einschmelzt und daraus ein Objekt entstehen lässt. Dadurch werden die Eigenschaften etlicher Materialien und deren Vorteile in Deinem Teil vereint. Als Material werden verschiedene Kunststoffe verwendet.</p>
@@ -157,8 +103,8 @@
       </div>
     </article>
 
-    <article class="method flip">
-      <figure class="photo"><img src="img/resin.jpg" alt="SLA-Druck im Harzdrucker" loading="lazy"></figure>
+    <article class="method flip" id="sla">
+      <figure class="photo"><img src="img/resin.jpg" alt="SLA-Druck im Harzdrucker" width="800" height="338" loading="lazy"></figure>
       <div class="prose">
         <h3>SLA Druck</h3>
         <p>Aus einer Flüssigkeit entsteht ein hochpräzises Objekt. Man bemerkt nicht, dass es aus einem Drucker kommt. Für den Modellbau, Cosplay oder Dein eigenes Design, man kann damit alles umsetzen, als wäre es gegossen. Das gedruckte Teil muss aber nach dem Drucken noch gewaschen und gehärtet werden. Das Material ist ein Kunstharz (vergleichbar mit Epoxid).</p>
@@ -175,11 +121,11 @@
     </article>
 
     <div class="pair">
-      <article class="prose">
+      <article class="card" id="cad">
         <h3>Modellieren am CAD</h3>
         <p>Bauteile, Ersatzteile oder Prototypen können mit unseren Konstrukteur-Fähigkeiten schnell im CAD 3D-modelliert werden und so können wir Dein Objekt effizient gestalten.</p>
       </article>
-      <article class="prose">
+      <article class="card" id="nachbearbeitung">
         <h3>Nachbearbeitung SLA</h3>
         <p>Nachdem ein Objekt mit Resin gedruckt wurde, muss es in Isopropanol gewaschen und unter UV-Licht gehärtet werden, damit es seine Funktion erfüllt. Teile uns alle Deine Wünsche mit und wir können gemeinsam das richtige Material für Dich auswählen.</p>
       </article>
@@ -188,27 +134,117 @@
     <h3 class="more-title">Wir können noch mehr!</h3>
     <ul class="more">
       <li>
-        <img src="img/streaks.jpg" alt="Bunte Filamentfäden" loading="lazy">
+        <img src="img/streaks.jpg" alt="Bunte Filamentfäden" width="1800" height="1192" loading="lazy">
         <p>Mehrfarbig drucken. Kombiniere 5 Farben oder Materialien.</p>
       </li>
       <li>
-        <img src="img/benchy.jpg" alt="Goldene Boote aus dem 3D-Drucker" loading="lazy">
+        <img src="img/benchy.jpg" alt="Goldene Boote aus dem 3D-Drucker" width="1800" height="909" loading="lazy">
         <p>Mit Metallic-Look-Filamenten (Gold / Kupfer / Silber) drucken.</p>
       </li>
       <li>
-        <img src="img/glow.jpg" alt="Weisse Filamentrolle, rechts im Dunkeln grün leuchtend" loading="lazy">
+        <img src="img/glow.jpg" alt="Weisse Filamentrolle, rechts im Dunkeln grün leuchtend" width="1024" height="1024" loading="lazy">
         <p>Glow-in-the-Dark-Filament drucken.</p>
       </li>
     </ul>
   </div>
 </section>
 
+<!-- Preise -->
+<section class="section dark" id="preise">
+  <div class="wrap">
+    <h2>Preise</h2>
+    <dl class="prices">
+      <div class="p3">
+        <dt>FDM 3D-Druck</dt>
+        <dd class="amt"><span>ab</span> 0.19 <small>Fr./g</small></dd>
+        <dd class="desc">Eine vielfältige Druckart mit Materialien für alle Anwendungen.</dd>
+      </div>
+      <div class="p3">
+        <dt>SLA 3D-Druck</dt>
+        <dd class="amt"><span>ab</span> 0.29 <small>Fr./g</small></dd>
+        <dd class="desc">Für schöne Teile ohne sichtbare Schichten. Hart und hitzebeständig.</dd>
+      </div>
+      <div class="p2">
+        <dt>Nachbearbeitung SLA</dt>
+        <dd class="amt">5.00 <small>Fr.</small></dd>
+        <dd class="desc">Das Teil aus Harz muss in Isopropanol gewaschen und dann im UV-Licht gehärtet werden. Dann ist es fixfertig einsetzbar.</dd>
+      </div>
+      <div class="p2">
+        <dt>Grundgebühr 3D-Druck</dt>
+        <dd class="amt">8.00 <small>Fr.</small></dd>
+        <dd class="desc">Für das Vorbereiten deines Drucks fällt eine Pauschalgebühr pro Druck an. Sie gilt pro Druckplatte, die gedruckt wird. Für jede weitere 5.00 Fr.</dd>
+      </div>
+      <div class="p2">
+        <dt>Modellieren am CAD</dt>
+        <dd class="amt">69.00 <small>Fr. / h</small></dd>
+        <dd class="desc">Dein persönliches Teil nach Deinen Wünschen hergestellt.</dd>
+      </div>
+    </dl>
+    <p class="note">Die Preise werden nach Aufwand (CAD Gebühren) und dem Filamentgewicht berechnet.</p>
+  </div>
+</section>
+
+<!-- Mittlerer Kontakt-Aufruf (einziger) -->
+<section class="cta-band" aria-label="Beratung">
+  <div class="wrap cta-inner">
+    <p>Du brauchst Beratung oder möchtest Dein Projekt mit uns besprechen?</p>
+    <a class="btn light" href="#kontakt">Jetzt anfragen</a>
+  </div>
+</section>
+
+<!-- Service + 3D-Modelle -->
+<section class="section" id="service">
+  <div class="wrap">
+    <h2>Wir drucken, was Du brauchst.</h2>
+    <ol class="steps">
+      <li>
+        <h3>Du brauchst ein Modell.</h3>
+        <p>Lade eines aus dem Internet herunter, zum Beispiel von Thingiverse, oder lass eines von uns konstruieren.</p>
+      </li>
+      <li>
+        <h3>Wie soll dein Modell gedruckt werden?</h3>
+        <p>Welche Farbe oder welches Material soll verwendet werden? Wo wird das Teil belastet und wie soll die Oberfläche sein? Bei gewünschter Beratung einfach fragen!</p>
+      </li>
+      <li>
+        <h3>Schreibe uns alle Details.</h3>
+        <p>Dann melden wir uns bei Dir und der Druck beginnt. Erhalte deine Modelle nach deinen Wünschen.</p>
+      </li>
+    </ol>
+
+    <div class="models">
+      <div class="prose">
+        <h3>Wie komme ich zu 3D-Modellen?</h3>
+        <p>Es gibt Webseiten mit Millionen von Modellen, vielleicht findest du dort genau, was du brauchst. Die bekanntesten Webseiten:</p>
+        <ul class="sources">
+          <li><a href="https://www.thingiverse.com/" target="_blank" rel="noopener">Thingiverse.com</a></li>
+          <li><a href="https://makerworld.com/" target="_blank" rel="noopener">MakerWorld.com</a></li>
+          <li><a href="https://www.printables.com/" target="_blank" rel="noopener">Printables.com</a></li>
+          <li><a href="https://cults3d.com/" target="_blank" rel="noopener">Cults3d.com</a></li>
+        </ul>
+        <p>Du hast kein Teil exakt nach deinen Wünschen gefunden? Mit Deinen Informationen können wir ein Teil exakt nach deinen Wünschen im CAD erstellen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ersatzteil / Neuentwicklung -->
+<section class="section tint" id="ersatzteil">
+  <div class="wrap duo">
+    <figure class="photo"><img src="img/cad.jpg" alt="Konstruktion eines Teils am CAD-Bildschirm" width="1800" height="1200" loading="lazy"></figure>
+    <div class="prose">
+      <h2>Ersatzteil / Neuentwicklung</h2>
+      <p>Du hast ein kaputtes Teil, welches Du nirgends findest. Wir können es mit Prototypen-Drucker und CAD-Modell wieder hinbekommen, dabei wird Dein Teil zuerst grob im CAD entworfen und dann ein grober Prototyp gedruckt. Dieser wird dann verbessert, bis Dein Teil seine Funktion völlig erfüllt.</p>
+      <p>Auch ein völlig neues Teil können wir aus Deinen Ideen erstellen, umsetzen und verbessern. Dabei werden gemeinsam die Parameter besprochen und dann die Prototypen &amp; fertigen Teile 3D-gedruckt.</p>
+    </div>
+  </div>
+</section>
+
 <!-- Über uns -->
-<section class="section tint" id="ueber-uns">
+<section class="section" id="ueber-uns">
   <div class="wrap">
     <h2>Wir setzen auf hochentwickelte Drucker, um Dir die besten Ergebnisse zu liefern.</h2>
     <div class="about">
-      <figure class="photo tall"><img src="img/team.jpg" alt="Jamie und Julien im Studio" loading="lazy"><figcaption>Jamie Dubs und Julien Haller</figcaption></figure>
+      <figure class="photo tall"><img src="img/team.jpg" alt="Jamie und Julien im Studio" width="1800" height="1200" loading="lazy"><figcaption>Jamie Dubs und Julien Haller</figcaption></figure>
       <div class="prose">
         <h3>Wer steckt dahinter</h3>
         <p>Wir sind Jamie, Julien und Oliver. Ein motiviertes 3er-Team, das 3D-Druck lebt. Vor einigen Jahren begann alles mit dem ersten Drucker. Seit da gibt es kein Zurück mehr. Dank unserer schulischen Ausbildungen oder Lehren sind wir mit dem CAD und jeglichen 3D-Druckverfahren vertraut. Nun betreiben wir 17 3D-Drucker und eignen uns stetig neues Wissen und spannende Erfahrungen an.</p>
@@ -220,9 +256,9 @@
       </div>
     </div>
     <div class="gallery">
-      <figure><img src="img/shop.jpg" alt="Im Druckerregal der Werkstatt" loading="lazy"></figure>
-      <figure><img src="img/workshop.jpg" alt="Wartung eines Druckers in der Werkstatt" loading="lazy"></figure>
-      <figure><img src="img/repair.jpg" alt="Arbeit an einem Drucker" loading="lazy"></figure>
+      <figure><img src="img/shop.jpg" alt="Im Druckerregal der Werkstatt" width="1199" height="1800" loading="lazy"></figure>
+      <figure><img src="img/workshop.jpg" alt="Wartung eines Druckers in der Werkstatt" width="1800" height="1200" loading="lazy"></figure>
+      <figure><img src="img/repair.jpg" alt="Arbeit an einem Drucker" width="700" height="467" loading="lazy"></figure>
     </div>
     <p class="credit">Bilder in Zusammenarbeit mit Oliver Mundwiler</p>
   </div>
@@ -230,14 +266,17 @@
 
 <!-- Kontakt -->
 <section class="section contact" id="kontakt">
-  <div class="wrap">
-    <h2>Kontaktiere uns</h2>
-    <p class="lead">Du brauchst Beratung oder möchtest Dein Projekt mit uns besprechen? Wir sind telefonisch, per WhatsApp und E-Mail erreichbar.</p>
-    <div class="actions">
-      <a class="btn" href="mailto:info@my3dprints.ch?subject=Anfrage%203D-Druck">info@my3Dprints.ch</a>
-      <a class="btn ghost" href="tel:+41794357902">079 435 79 02</a>
-      <a class="btn ghost" href="https://wa.me/41794357902" target="_blank" rel="noopener">WhatsApp</a>
+  <div class="wrap contact-grid">
+    <div class="contact-main">
+      <h2>Kontakt</h2>
+      <p class="lead">Wir sind telefonisch, per WhatsApp und E-Mail erreichbar.</p>
+      <div class="tiles">
+        <a class="tile" href="tel:+41794357902"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span class="tile-label">Anrufen</span><span class="tile-value">079 435 79 02</span></a>
+        <a class="tile" href="https://wa.me/41794357902" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3 .78.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.25-.12-1.45-.72-1.7-.8-.22-.08-.4-.12-.56.12-.17.25-.65.8-.8.96-.14.17-.3.18-.54.06a6.7 6.7 0 0 1-3.3-2.9c-.25-.43.25-.4.72-1.34.08-.17.04-.3-.02-.42-.06-.12-.56-1.35-.76-1.85-.2-.48-.4-.42-.56-.42h-.47c-.17 0-.43.06-.65.3-.22.25-.85.83-.85 2.03s.87 2.35 1 2.52c.12.17 1.7 2.6 4.1 3.65 1.5.65 2.1.7 2.85.6.45-.07 1.4-.57 1.6-1.13.2-.55.2-1.03.14-1.13-.06-.1-.22-.17-.47-.3z"/></svg><span class="tile-label">WhatsApp</span><span class="tile-value">079 435 79 02</span></a>
+        <a class="tile" href="mailto:info@my3dprints.ch?subject=Anfrage%203D-Druck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.6 7H4v.4l8 5.6 8-5.6V7h-.6L12 12.2z"/></svg><span class="tile-label">E-Mail</span><span class="tile-value">info@my3dprints.ch</span></a>
+      </div>
     </div>
+    <figure class="photo contact-photo"><img src="img/printer.jpg" alt="Selbst gedruckte Filament-Box mit My3Dprints-Logo auf einem 3D-Drucker" width="1800" height="1200" loading="lazy"></figure>
   </div>
 </section>
 
@@ -249,6 +288,12 @@
     <span>Besuche uns auf Instagram: <a href="https://www.instagram.com/my3dprints.ch" target="_blank" rel="noopener">my3dprints.ch</a></span>
   </div>
 </footer>
+
+<nav class="mbar" aria-label="Schnellkontakt">
+  <a class="m-call" href="tel:+41794357902"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Anrufen</a>
+  <a href="https://wa.me/41794357902" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3 .78.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.25-.12-1.45-.72-1.7-.8-.22-.08-.4-.12-.56.12-.17.25-.65.8-.8.96-.14.17-.3.18-.54.06a6.7 6.7 0 0 1-3.3-2.9c-.25-.43.25-.4.72-1.34.08-.17.04-.3-.02-.42-.06-.12-.56-1.35-.76-1.85-.2-.48-.4-.42-.56-.42h-.47c-.17 0-.43.06-.65.3-.22.25-.85.83-.85 2.03s.87 2.35 1 2.52c.12.17 1.7 2.6 4.1 3.65 1.5.65 2.1.7 2.85.6.45-.07 1.4-.57 1.6-1.13.2-.55.2-1.03.14-1.13-.06-.1-.22-.17-.47-.3z"/></svg>WhatsApp</a>
+  <a href="mailto:info@my3dprints.ch?subject=Anfrage%203D-Druck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4.6 7H4v.4l8 5.6 8-5.6V7h-.6L12 12.2z"/></svg>E-Mail</a>
+</nav>
 
 </body>
 </html>
